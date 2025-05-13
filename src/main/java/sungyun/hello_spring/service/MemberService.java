@@ -13,8 +13,8 @@ import java.util.Optional;
 public class MemberService {
 
         private final MemberRepository memberRepository;
-
         @Autowired
+        //생성자 주입(웬만하면 이렇게 하자)
         public MemberService(MemberRepository memberRepository){
             this.memberRepository = memberRepository;
         }
